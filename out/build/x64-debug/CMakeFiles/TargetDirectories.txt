@@ -1,0 +1,3 @@
+C:/code/cpp/iat-editor/out/build/x64-debug/CMakeFiles/iat-editor.dir
+C:/code/cpp/iat-editor/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/code/cpp/iat-editor/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
