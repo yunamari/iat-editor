@@ -6,7 +6,11 @@
 
 int main(int argc, char* argv[]) {
     if (argc != 5) {
-        std::cout << "Usage: prog <pid> <iat_rva> <dll_path> <func_name>\n";
+        std::cout << "Usage: iat-editor <pid> <iat_rva> <dll_path> <func_name>\n\n";
+        std::cout << "<pid>       : The PID of the target application\n";
+        std::cout << "<iat_rva>   : The RVA (Relative Virtual Address) of the external function pointer you want to modify\n";
+        std::cout << "<dll_path>  : The path of the DLL where the replacement function is located\n";
+        std::cout << "<func_name> : The name of the replacement function (ensure this function is exported by the DLL)" << std::endl;
         return 1;
     }
     DWORD pid = std::stoul(argv[1]);
