@@ -1,5 +1,5 @@
 # -iat-editor
-loads a dll and changes an imported function entry specified in the dynamically specified dll (with its rva) in the program whose pid was previously specified
+changes the value of a pointer to a specified iat entry (with its rva) to point to a function specified in the user-specified dll
 # CLI
 ```
 Usage: iat-editor <pid> <iat_rva> <dll_path> <func_name>
