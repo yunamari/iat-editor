@@ -4,6 +4,7 @@ loads a dll and changes an imported function entry specified in the dynamically 
 ```
 Usage: iat-editor <pid> <iat_rva> <dll_path> <func_name>
 ```
+
 `<pid>`       : the pid of the target application
 `<iat_rva>`   : the rva of your external function pointer
 `<dll_path>`  : the path of the dll in which your replacement function is located
