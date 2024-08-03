@@ -1,4 +1,4 @@
-# -iat-editor
+# iat-editor
 changes the value of a pointer to a specified iat entry (with its rva) to point to a function specified in the user-specified dll
 # CLI
 ```
