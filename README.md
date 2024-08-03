@@ -3,10 +3,10 @@ loads a dll and changes an imported function entry specified in the dynamically 
 # CLI
 ```
 Usage: iat-editor <pid> <iat_rva> <dll_path> <func_name>
-```
 
-`<pid>`       : the pid of the target application
-`<iat_rva>`   : the rva of your external function pointer
-`<dll_path>`  : the path of the dll in which your replacement function is located
-`<func_name>` : the name of your replacement function (make sure that this function is exported by the dll)
+<pid>       : The PID of the target application
+<iat_rva>   : The RVA (Relative Virtual Address) of the external function pointer you want to modify
+<dll_path>  : The path of the DLL where the replacement function is located
+<func_name> : The name of the replacement function (ensure this function is exported by the DLL)
+```
 
