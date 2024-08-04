@@ -13,7 +13,7 @@ bool Inject(DWORD pid, const std::string& dll_path) {
     }
 
  
-    LPVOID dll_mem = VirtualAllocEx(hProcess, nullptr, dll_path.size() + 1, MEM_COMMIT, PAGE_READWRITE);
+    LPVOID dll_mem = VirtualAllocEx(hProcess, nullptr, nullptr, MEM_COMMIT, PAGE_READWRITE);
     if (!dll_mem) {
         std::cerr << "Error: Unable to allocate memory in target process : " << ErrorMsg(GetLastError()) << std::endl;
         CloseHandle(hProcess);
